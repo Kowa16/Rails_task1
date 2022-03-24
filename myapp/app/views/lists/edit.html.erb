@@ -1,0 +1,23 @@
+<h3>スケジュール編集</h3>
+<%= form_with model: @list do |f| %>
+  <table>
+    <tr>
+    <th><%= f.label :title ,"タイトル" %></th>
+    <td><%= f.text_field :title %></td>
+    </tr>
+    <tr>
+    <th><%= f.label :start ,"開始日" %></th>
+    <td><%= f.date_field :start %></td>
+    </tr>
+    <tr>
+    <th><%= f.label :end ,"終了日" %></th>
+    <td><%= f.date_field :end %></td>
+    </tr>
+  </table>
+  <div>
+    <ul>
+      <li><%= f.submit "編集を完了する" %></li>
+      <li><%= link_to "スケジュール一覧に戻る", :lists %></li>
+    </ul>
+  </div>
+<% end %>
