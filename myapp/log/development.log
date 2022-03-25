@@ -1,0 +1,193 @@
+Started GET "/" for 126.116.156.242 at 2022-03-24 13:02:19 +0000
+Cannot render console from 126.116.156.242! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (5.6ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (6.1ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 1 pending migration:
+
+20220228230337_create_lists.rb
+
+
+):
+  
+activerecord (7.0.2.2) lib/active_record/migration.rb:627:in `check_pending!'
+activerecord (7.0.2.2) lib/active_record/migration.rb:592:in `block (2 levels) in call'
+activesupport (7.0.2.2) lib/active_support/file_update_checker.rb:83:in `execute'
+activerecord (7.0.2.2) lib/active_record/migration.rb:597:in `block in call'
+activerecord (7.0.2.2) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.2.2) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.2.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.2.2) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.2.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.2.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.2.2) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.2.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (7.0.2.2) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.2.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.2.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.2.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.2.2) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.2.2) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.2.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.2.2) lib/action_dispatch/middleware/server_timing.rb:20:in `call'
+actionpack (7.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.2.2) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.2.2) lib/action_dispatch/middleware/host_authorization.rb:131:in `call'
+railties (7.0.2.2) lib/rails/engine.rb:530:in `call'
+puma (5.6.2) lib/puma/configuration.rb:252:in `call'
+puma (5.6.2) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.2) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.2) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.2) lib/puma/server.rb:441:in `process_client'
+puma (5.6.2) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/" for 126.116.156.242 at 2022-03-24 13:02:32 +0000
+Cannot render console from 126.116.156.242! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mCACHE ActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 1 pending migration:
+
+20220228230337_create_lists.rb
+
+
+):
+  
+activerecord (7.0.2.2) lib/active_record/migration.rb:627:in `check_pending!'
+activerecord (7.0.2.2) lib/active_record/migration.rb:592:in `block (2 levels) in call'
+activesupport (7.0.2.2) lib/active_support/file_update_checker.rb:83:in `execute'
+activerecord (7.0.2.2) lib/active_record/migration.rb:597:in `block in call'
+activerecord (7.0.2.2) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.2.2) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.2.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.2.2) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.2.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.2.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.2.2) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.2.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (7.0.2.2) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.2.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.2.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.2.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.2.2) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.2.2) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.2.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.2.2) lib/action_dispatch/middleware/server_timing.rb:20:in `call'
+actionpack (7.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.2.2) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.2.2) lib/action_dispatch/middleware/host_authorization.rb:131:in `call'
+railties (7.0.2.2) lib/rails/engine.rb:530:in `call'
+puma (5.6.2) lib/puma/configuration.rb:252:in `call'
+puma (5.6.2) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.2) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.2) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.2) lib/puma/server.rb:441:in `process_client'
+puma (5.6.2) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateLists (20220228230337)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "lists" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "start" date, "end" date, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20220228230337"]]
+  [1m[36mTRANSACTION (9.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2022-03-24 13:03:33.501520"], ["updated_at", "2022-03-24 13:03:33.501520"]]
+  [1m[36mTRANSACTION (5.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 126.116.156.242 at 2022-03-24 13:03:41 +0000
+Cannot render console from 126.116.156.242! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.7.2/gems/railties-7.0.2.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.7.2/gems/railties-7.0.2.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.9ms | Allocations: 565)
+Completed 200 OK in 19ms (Views: 6.2ms | ActiveRecord: 0.0ms | Allocations: 5558)
+
+
+Started GET "/" for 126.116.156.242 at 2022-03-24 13:03:46 +0000
+Cannot render console from 126.116.156.242! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.7.2/gems/railties-7.0.2.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.7.2/gems/railties-7.0.2.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.9ms | Allocations: 367)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.0ms | Allocations: 1127)
+
+
+Started GET "/lists" for 126.116.156.242 at 2022-03-24 13:04:01 +0000
+Cannot render console from 126.116.156.242! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ListsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.2ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  ↳ app/views/lists/index.html.erb:20
+  Rendered lists/index.html.erb within layouts/application (Duration: 44.8ms | Allocations: 4755)
+  Rendered layout layouts/application.html.erb (Duration: 465.5ms | Allocations: 91913)
+Completed 200 OK in 476ms (Views: 467.6ms | ActiveRecord: 0.2ms | Allocations: 93224)
+
+
+Started GET "/" for 126.116.156.242 at 2022-03-25 12:52:56 +0000
+Cannot render console from 126.116.156.242! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (5.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.7.2/gems/railties-7.0.2.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.7.2/gems/railties-7.0.2.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 6.5ms | Allocations: 565)
+Completed 200 OK in 61ms (Views: 23.3ms | ActiveRecord: 0.0ms | Allocations: 5144)
+
+
+Started GET "/" for 126.116.156.242 at 2022-03-25 12:52:59 +0000
+Cannot render console from 126.116.156.242! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.7.2/gems/railties-7.0.2.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.7.2/gems/railties-7.0.2.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.4ms | Allocations: 367)
+Completed 200 OK in 7ms (Views: 6.1ms | ActiveRecord: 0.0ms | Allocations: 1127)
+
+
+Started GET "/lists" for 126.116.156.242 at 2022-03-25 12:53:08 +0000
+Cannot render console from 126.116.156.242! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ListsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (2.8ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  ↳ app/views/lists/index.html.erb:20
+  Rendered lists/index.html.erb within layouts/application (Duration: 14.7ms | Allocations: 1255)
+  Rendered layout layouts/application.html.erb (Duration: 169.2ms | Allocations: 34488)
+Completed 200 OK in 185ms (Views: 173.9ms | ActiveRecord: 2.8ms | Allocations: 35764)
+
+

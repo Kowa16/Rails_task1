@@ -1,0 +1,30 @@
+<h3>スケジュール詳細</h3>
+  <table>
+    <tr>
+      <th>タイトル</th>
+      <td><%= @list.title %></td>
+    </tr>
+ 
+    <tr>
+      <th>開始日</th>
+      <td><%= @list.start %></td>
+    </tr>
+ 
+    <tr>
+      <th>終了日</th>
+      <td><%= @list.end %></td>
+    </tr>
+  
+    <tr>
+      <th>更新日</th>
+      <td><%= @list.updated_at %></td>
+    </tr>
+  </table>
+ 
+  <div>
+    <ul>
+      <li><%= link_to "ユーザー情報一覧に戻る", :lists %></li>
+    </ul>
+  </div>
+
+
